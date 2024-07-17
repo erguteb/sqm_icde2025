@@ -1,0 +1,27 @@
+# data
+device: "0"
+seed: 2
+data_type: "folktable_income"
+folk_state: "CA"
+is_onehot: True
+split_size: 0.9
+row_clip: 1
+# SGD train
+epoch: 10
+q: 0.001
+lr: 0.01
+weight_decay: 0.001
+eval_freq: 1
+model_c: 1 # clip model weight
+# dpsgd
+c: 0.75
+perturb_grad: True
+sigma_multi: 0.01
+# lr
+gamma: 10000
+gaussian_approx: False # mean of independent r.v. follows gaussian
+mu_normalized: 4.9
+# # new added parameters.
+gaussian_sigma: 0.0 # this the sigma for the noise added to the output
+# gaussian_sigma_y: 0.0
+flip_y: 0.0 # this the sigma for the noise added to the output

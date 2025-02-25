@@ -3,6 +3,16 @@
 1. The config file is loaded using [hydra](https://hydra.cc/docs/intro/).
 2. To run real-world data experiments (including multidimensional data), additional packages of [pandas](https://pandas.pydata.org/) and [folktable](https://github.com/socialfoundations/folktables) are needed.
 
+ ## MPC simulation
+
+> python mpc_simulation_pca.py
+
+> python mpc_simulation_lr.py
+
+
+These scripts simulates the end-to-end performance of SQM on a single machine. You can vary the data dimensions, number of clients, and time delay for message passing.
+
+
 ## Experiments on PCA
 
 > python main_hydra.py
